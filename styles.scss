@@ -1,0 +1,94 @@
+    // Import fonts
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Big+Shoulders+Display:wght@600&family=Josefin+Sans:wght@400;600&family=Karla:wght@500&family=Kumbh+Sans:wght@500;600&family=Lexend:wght@500&family=Open+Sans:wght@600&family=Outfit:wght@400;500&family=Poppins:wght@500;600&family=Roboto:wght@500&family=Rubik&display=swap');
+     :root {
+        --LightGray: hsl(204, 43%, 93%);
+        --GrayishBlue: hsl(218, 22%, 67%);
+        --Cyan: hsl(179, 65%, 40%);
+        --LightCyan: hsl(179, 64%, 44%);
+        --BrightYellow: hsl(71, 73%, 54%);
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--lightGray);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Outfit', sans-serif;
+        overflow: hidden;
+    }
+    
+    .mini__container {
+        margin: 1rem;
+        margin-left: 0;
+        max-width: 960px;
+        box-shadow: 1px 0px 20px 0px hsl(179, 62%, 43%);
+        .header__area {
+            padding: 2rem;
+            .main__header {
+                color: var(--Cyan);
+                font-family: 'Poppins', sans-serif;
+            }
+            .mini__header {
+                color: var(--BrightYellow);
+                font-family: 'Poppins', sans-serif;
+            }
+            .statement {
+                font-family: 'Poppins', sans-serif;
+                opacity: 0.4;
+                line-height: 1.8;
+            }
+        }
+        .content__details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            width: 100%;
+            .subscription__area {
+                flex: 50%;
+                background: var(--Cyan);
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                padding: 2rem;
+                .amount {
+                    display: flex;
+                    align-items: center;
+                    .figure {
+                        font-size: 1.5rem;
+                        margin-right: 1rem;
+                    }
+                    .duration {
+                        opacity: 0.5;
+                    }
+                }
+                .advert {
+                    font-size: 1.1rem;
+                    opacity: 0.8;
+                }
+                .btn {
+                    width: 87%;
+                    border-radius: 5px;
+                    text-align: center;
+                    background: var(--BrightYellow);
+                    padding: 1rem;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .why__us__area {
+                background: var(--LightCyan);
+                color: #fff;
+                padding: 1.5rem;
+                font-family: 'Lexend', sans-serif;
+            }
+        }
+    }

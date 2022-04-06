@@ -1,1 +1,128 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Big+Shoulders+Display:wght@600&family=Josefin+Sans:wght@400;600&family=Karla:wght@500&family=Kumbh+Sans:wght@500;600&family=Lexend:wght@500&family=Open+Sans:wght@600&family=Outfit:wght@400;500&family=Poppins:wght@500;600&family=Roboto:wght@500&family=Rubik&display=swap");
+:root {
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  --Cyan: hsl(179, 65%, 40%);
+  --LightCyan: hsl(179, 64%, 44%);
+  --BrightYellow: hsl(71, 73%, 54%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--lightGray);
+  font-family: 'Lexend', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+}
+
+.mini__container {
+  margin: 1rem;
+  margin-left: 0;
+  max-width: 960px;
+  -webkit-box-shadow: 1px 0px 20px 0px #2ab2af;
+          box-shadow: 1px 0px 20px 0px #2ab2af;
+}
+
+.mini__container .header__area {
+  padding: 2rem;
+}
+
+.mini__container .header__area .main__header {
+  color: var(--Cyan);
+  font-family: 'Poppins', sans-serif;
+}
+
+.mini__container .header__area .mini__header {
+  color: var(--BrightYellow);
+  font-family: 'Poppins', sans-serif;
+}
+
+.mini__container .header__area .statement {
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.4;
+  line-height: 1.8;
+}
+
+.mini__container .content__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  width: 100%;
+}
+
+.mini__container .content__details .subscription__area {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background: var(--Cyan);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.mini__container .content__details .subscription__area .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mini__container .content__details .subscription__area .amount .figure {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.mini__container .content__details .subscription__area .amount .duration {
+  opacity: 0.5;
+}
+
+.mini__container .content__details .subscription__area .advert {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.mini__container .content__details .subscription__area .btn {
+  width: 87%;
+  border-radius: 5px;
+  text-align: center;
+  background: var(--BrightYellow);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.mini__container .content__details .subscription__area .btn a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.mini__container .content__details .why__us__area {
+  background: var(--LightCyan);
+  color: #fff;
+  padding: 1.5rem;
+  font-family: 'Lexend', sans-serif;
+}
